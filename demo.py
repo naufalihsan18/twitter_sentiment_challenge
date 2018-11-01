@@ -14,7 +14,8 @@ auth.set_access_token(access_token, access_token_secret)
 api = tweepy.API(auth)
 
 #Step 3 - Retrieve Tweets
-public_tweets = api.search('Bohemian Rhapsody')
+katakunci= input('Masukkan kata yang ingin di cek:')
+public_tweets = api.search(katakunci)
 
 
 
